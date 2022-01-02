@@ -2,7 +2,7 @@ from __future__ import print_function
 import numpy as np 
 import pandas as pd 
 
-
+#class tree
 class TreeNode(object):
     def __init__(self, ids = None, children = [], entropy = 0, depth = 0):
         self.ids = ids           # index of data in this node
@@ -34,7 +34,7 @@ class DecisionTreeID3(object):
         self.min_samples_split = min_samples_split 
         self.Ntrain = 0
         self.min_gain = min_gain
-    
+ 
     def fit(self, data, target):
         self.Ntrain = data.count()[0]
         self.data = data 
